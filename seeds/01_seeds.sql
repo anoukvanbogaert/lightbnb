@@ -1,9 +1,9 @@
-INSERT INTO users (name, email, pass)
+INSERT INTO users (name, email, password)
 VALUES ('ryan', 'ryan@lighthouse.ca', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'),
 ('jaxson', 'jaxson@lighthouse.ca', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.'),
 ('taylor', 'taylor@lighthouse.ca', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.');
 
-INSERT INTO properties (title, description, cost_night, parking_spots, number_bathrooms, number_bedrooms, thumbnail_photo, cover_photo, owner_id, country, street, city, province, post_code, active)
+INSERT INTO properties (title, description, cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms, thumbnail_photo_url, cover_photo_url, owner_id, country, street, city, province, post_code, active)
 VALUES ('Swiss Chalet', 'ski-in, ski-out in beautiful Switserland', 1000, 2, 5, 4, 'pic1', 'pic2', 1, 'Switserland', 'rue1', 'Bern', 'Swissprov', 2050, 'TRUE'),
 ('Man Cave', 'A gamers paradise', 50, 0, 1, 0, 'pic1', 'pic2', 2, 'Canada', 'Playstation Ave', 'Whistler', 'BC', 8010, 'TRUE'),
 ('Mountain hut', 'climb up to get here', 500, 0, 2, 1, 'pic1', 'pic2', 3, 'Canada', 'Whistler ave', 'Squamish', 'BC', 3060, 'TRUE');
