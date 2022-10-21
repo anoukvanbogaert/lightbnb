@@ -20,18 +20,25 @@ $(() => {
       </div>
 
       <div class="search-property-form__field-wrapper">
+      <label for="search-property-form__minimum-rating">Minimum Rating</label>
+      <input type="text" name="owner_id" placeholder="owner_id" id="search-property-form__owner_id">
+    </div>
+
+
+
+      <div class="search-property-form__field-wrapper">
           <button>Search</button>
           <a id="search-property-form__cancel" href="#">Cancel</a>
       </div>
     </form>
-  `)
+  `);
   window.$searchPropertyForm = $searchPropertyForm;
 
   $searchPropertyForm.on('submit', function(event) {
     event.preventDefault();
     const data = $(this).serialize();
 
-    getAllListings(data).then(function( json ) {
+    getAllListings(data).then(function(json) {
       propertyListings.addProperties(json.properties);
       views_manager.show('listings');
     });
